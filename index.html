@@ -3,59 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nosso Casamento</title>
+    <title>Débora & Matheus</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        .presente {
-            text-align: center;
-            margin: 40px auto;
-            padding: 30px;
-            background-color: #fff;
-            border-radius: 15px;
-            max-width: 800px;
-            box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
-        }
-
-        .pix-opcao {
-            background-color: #e3f2e1;
-            padding: 20px;
-            margin: 15px auto;
-            border-radius: 10px;
-            width: 90%;
-            max-width: 500px;
-            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.05);
-            word-break: break-word;
-        }
-
-        .pix-opcao h3 {
-            color: #579e7d;
-            margin-bottom: 10px;
-        }
-
-        .pix-codigo {
-            font-family: monospace;
-            font-size: 14px;
-            margin-bottom: 10px;
-        }
-
-        .pix-opcao button {
-            background-color: #579e7d;
-            color: white;
-            border: none;
-            padding: 8px 12px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        .pix-opcao button:hover {
-            background-color: #467e61;
-        }
-    </style>
 </head>
-<body>
-    <header>
-        <img src="imagens/convite.jpg" alt="Convite de Casamento">
+<body class="body">
+    <header class="sticky-header" style="display: flex; justify-content: space-around; align-items: center; backdrop-filter: blur(4px);">
+        <div class="logo">D & M</div>
+        <div class="items">
+            <nav class="navegation">
+                <a href="#">PÁGINA INICIAL</a>
+                <a href="#">CONFIRMAR PRESENÇA</a>
+                <a href="#">LOCAL</a>
+                <a href="#">PRESENTES</a>
+            </nav>
+        </div>
     </header>
+
+    <div style="display: flex; justify-content: center; align-items: center;">
+        <img class="imagem-casamento" src="imagens/debora_e_matheus.png" alt="Casamento Débora e Matheus" style="width: 30%; height: 30%; margin: auto;">
+    </div>
+
+    <section>
+        <h2 class="text-green center">
+            Porém eu e a minha casa serviremos ao Senhor!
+        </h2>
+        <h4 class ="text-green center">
+            Josué 24:15
+        </h4>
+    </section>
+
+
+    <section>
+        <h3 class="text-green center">
+            Com gratidão a Deus, convidamos você para testemunhar o início da nossa história como marido e mulher!
+        </h3>
+    </section>
+
 
     <section class="presente">
         <h2>Nosso Presente de Casamento 💖</h2>
@@ -91,20 +74,26 @@
         <h2>Confirme sua Presença</h2>
         <p>Preencha o formulário abaixo para confirmar sua presença no casamento:</p>
     
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf6Rhl_94NnlYTerb-JejR_J74-_yORj-hUnJvc3RVWm_nkWA/viewform?embedded=true" 
-            frameborder="0">Loading…</iframe>
+        <div style="filter: invert(1);">
+            <div style="filter: hue-rotate(189.73deg) saturate(18.61%) brightness(96.86%)">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf6Rhl_94NnlYTerb-JejR_J74-_yORj-hUnJvc3RVWm_nkWA/viewform?embedded=true" 
+                frameborder="0">Loading…</iframe>
+            </div>
+        </div>
+        
     </section>
 
-    <script>
-        function copiarPixPorDiv(botao) {
-            const divPai = botao.closest('.pix-opcao');
-            const codigoPix = divPai.getAttribute('data-pix');
-            navigator.clipboard.writeText(codigoPix).then(() => {
-                alert("Código Pix copiado com sucesso!");
-            });
-        }
-    </script>
-
+    
+    <!--  arrumar cor texto  -->
+    <div class="local">
+        <h2>Local do Casamento</h2>
+        <p>O casamento será realizado no Sítio Três Irmãos, em Balneário Camboriú.</p>
+        <p>Endereço: Av. Rio Amazonas, 5917 - Bairro Rio Pequeno, Camboriú - SC, 88340-000 </p>
+        <p>Data: 25 de dezembro de 2023</p>
+        <p>Horário: 15:30</p>
+        <iframe width="200" height="450" style="border:0" loading="lazy" allowfullscreen
+            src="https://www.google.com/maps/embed/v1/place?q=sitio%20tres%20irmaos%20balneario&key=AIzaSyDzrmrQtxajE7EHtu-ziKwYWy_WzXQVw08"></iframe>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

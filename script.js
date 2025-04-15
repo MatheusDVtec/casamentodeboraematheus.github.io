@@ -2,11 +2,10 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("Página carregada! O formulário do Google Forms está pronto.");
 });
 
-function copiarPix() {
-    const campoPix = document.getElementById("chavePix");
-    campoPix.select();
-    campoPix.setSelectionRange(0, 99999); // para mobile
-
-    document.execCommand("copy");
-    alert("Chave Pix copiada com sucesso!");
+function copiarPixPorDiv(botao) {
+    const divPai = botao.closest('.pix-opcao');
+    const codigoPix = divPai.getAttribute('data-pix');
+    navigator.clipboard.writeText(codigoPix).then(() => {
+        alert("Código Pix copiado com sucesso!");
+    });
 }
