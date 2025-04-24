@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentes - Débora & Matheus</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+    <script>
+        function copiarPixPorDiv(button) {
+            var pixCode = button.closest('.pix-opcao').getAttribute('data-pix');
+            var textarea = document.createElement('textarea');
+            textarea.value = pixCode;
+            document.body.appendChild(textarea);
+            textarea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textarea);
+            alert('Chave Pix copiada com sucesso!');
+        }
+    </script>
+</head>
+<body class="body">
+
+    <nav class="navbar navbar-expand-lg sticky-top site-header">
+        <div class="container-fluid monserrat-500 header-text">
+            <a class="navbar-brand col-4" href="#">
+                <div class="offset-6">
+                    <img src="imagens/debora_e_matheus_logo.png" alt="Logo Casamento Débora e Matheus" style="width: 80%; margin: auto;">
+                </div>
+            </a>
+            <button class="navbar-toggler navbar-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="color: white; border-color: white;">
+                <span class="navbar-toggler-icon" style="background-color: white; border-radius: 3px;"></span>
+            </button>
+            <div class="collapse navbar-collapse offset-3" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="index.html">PÁGINA INICIAL</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="confirmar.html">CONFIRMAR PRESENÇA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="local.html">LOCAL</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" href="presentes.html">PRESENTES</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="presente" class="presente bg-verde-claro">
+        <div class="container-fluid">
+            <div class="row">
+                <h2 class="text-green monserrat-400 pt-5 text-center">Nosso Presente de Casamento 💖</h2>
+                <p class="monserrat-400 text-center">Se você quiser nos presentear, estamos recebendo por Pix 🥰</p>
+            </div>
+
+            <div class="pix-opcao" data-pix="00020126580014BR.GOV.BCB.PIX013635f8d598-fcf0-4e82-bde6-6ae4887e69055204000053039865406300.005802BR5921Matheus Oro Del Vigna6009SAO PAULO62140510efiKvutzpT6304591C">
+                <h3 class="text-green">Presente de R$300</h3>
+                <p class="pix-descricao">Para ajudar o casal com pequenos detalhes do novo lar 🏠</p>
+                <button class="btn btn-light" onclick="copiarPixPorDiv(this)">Copiar Código</button>
+            </div>
+
+            <div class="pix-opcao" data-pix="00020126580014BR.GOV.BCB.PIX013635f8d598-fcf0-4e82-bde6-6ae4887e69055204000053039865406500.005802BR5921Matheus Oro Del Vigna6009SAO PAULO62140510HmZTCqtB8M6304D2B2">
+                <h3 class="text-green">Presente de R$500</h3>
+                <p class="pix-descricao">Para contribuir com a decoração do nosso cantinho 🖼️</p>
+                <button class="btn btn-light" onclick="copiarPixPorDiv(this)">Copiar Código</button>
+            </div>
+
+            <div class="pix-opcao" data-pix="00020126580014BR.GOV.BCB.PIX013635f8d598-fcf0-4e82-bde6-6ae4887e69055204000053039865406700.005802BR5921Matheus Oro Del Vigna6009SAO PAULO62140510u9rlAaQuFw6304B139">
+                <h3 class="text-green">Presente de R$700</h3>
+                <p class="pix-descricao">Pix para ajudar o casal a comprar os móveis 🛋️</p>
+                <button class="btn btn-light" onclick="copiarPixPorDiv(this)">Copiar Código</button>
+            </div>
+
+            <div class="pix-opcao" data-pix="00020126580014BR.GOV.BCB.PIX013635f8d598-fcf0-4e82-bde6-6ae4887e690552040000530398654071000.005802BR5921Matheus Oro Del Vigna6009SAO PAULO6214051057rjl3hWai63042E50">
+                <h3 class="text-green">Presente de R$1000</h3>
+                <p class="pix-descricao">Para nos ajudar com um super presente para o novo lar 🎁</p>
+                <button class="btn btn-light" onclick="copiarPixPorDiv(this)">Copiar Código</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
