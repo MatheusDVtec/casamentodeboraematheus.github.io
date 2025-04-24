@@ -105,7 +105,8 @@ iframe {
 
 /*Text colors*/
 .text-green {
-    color: #4a7c4a;
+    color: #e4e7c9;
+    text-shadow: 1px 1px 2px rgba(10, 59, 14, 0.842);
 }
 
 
@@ -147,7 +148,8 @@ iframe {
 .bloco-versiculo h2,
 .bloco-versiculo h5,
 .bloco-versiculo p {
-    color: #4a7c4a;
+    color: #e4e7c9;
+    text-shadow: 1px 1px 2px rgba(10, 59, 14, 0.842);
 }
 
 .bloco-historia {
@@ -166,7 +168,8 @@ iframe {
 .bloco-historia h3 {
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
-    color: #345b34;
+    color: #e4e7c9;
+    text-shadow: 1px 1px 2px rgba(10, 59, 14, 0.842);;
     margin-bottom: 30px;
     text-align: center;
     font-size: 2.2rem;
@@ -189,4 +192,22 @@ iframe {
     font-size: 1.2rem;
     color: #4a7c4a;
     text-align: center;
+}
+
+.presente-title {
+    color: #579e7d;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.titulo-traje {
+    color: #e4e7c9 !important;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+    font-size: 2.2rem;
+    margin-bottom: 30px;
 }
