@@ -12,7 +12,7 @@
 }
 
 .monserrat-400 {
-    background-color: #e3f2e1;
+    background-color: transparent;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -135,7 +135,7 @@ iframe {
 }
 
 .bloco-versiculo {
-    background-color: #e3f2e1;
+    background-color: transparent;
     border-radius: 16px;
     padding: 30px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
@@ -151,7 +151,7 @@ iframe {
 }
 
 .bloco-historia {
-    background-color: #e3f2e1;
+    background-color: transparent;
     border-radius: 16px;
     padding: 40px 30px;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
