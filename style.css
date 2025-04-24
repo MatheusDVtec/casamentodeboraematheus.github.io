@@ -139,7 +139,6 @@ iframe {
     background-color: transparent;
     border-radius: 16px;
     padding: 30px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     max-width: 900px;
     margin: 40px auto;
     text-align: center;
@@ -149,14 +148,12 @@ iframe {
 .bloco-versiculo h5,
 .bloco-versiculo p {
     color: #e4e7c9;
-    text-shadow: 1px 1px 2px rgba(10, 59, 14, 0.842);
 }
 
 .bloco-historia {
     background-color: transparent;
     border-radius: 16px;
     padding: 40px 30px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
     max-width: 960px;
     margin: 60px auto;
     font-size: 1.15rem;
@@ -169,7 +166,6 @@ iframe {
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
     color: #e4e7c9;
-    text-shadow: 1px 1px 2px rgba(10, 59, 14, 0.842);;
     margin-bottom: 30px;
     text-align: center;
     font-size: 2.2rem;
