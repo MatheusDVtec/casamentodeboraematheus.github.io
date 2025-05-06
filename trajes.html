@@ -15,17 +15,6 @@
             text-align: center;
             margin-top: 30px;
         }
-        .traje-img {
-            max-width: 100%;
-            border-radius: 10px;
-            box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
-            margin-bottom: 20px;
-        }
-        .titulo-traje {
-            color: #223823;
-            font-weight: 700;
-            margin-top: 20px;
-        }
     </style>
 </head>
 <body class="body">
@@ -38,16 +27,28 @@
                     <img  src="imagens/debora_e_matheus_logo.png" alt="Logo Casamento Débora e Matheus" style="width: 80%; margin: auto;">
                 </div>
             </a>
-            <button class="navbar-toggler navbar-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="color: white; border-color: white;">
-                <span class="navbar-toggler-icon" style="background-color: white; border-radius: 3px;"></span>
+            <button class="navbar-toggler navbar-button custom-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation" style="color: #e3f2e1; border-color: #e3f2e1;">
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse offset-3" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link text-white" href="index.html">PÁGINA INICIAL</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="confirmar.html">CONFIRMAR PRESENÇA</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="local.html">LOCAL</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="presente.html">PRESENTES</a></li>
-                    <li class="nav-item"><a class="nav-link text-white active" href="trajes.html">TRAJES</a></li>
+                    <li class="nav-item navbar-item" onmouseover="this.style.backgroundColor='#579e7d';" onmouseout="this.style.backgroundColor='transparent';">
+                        <a class="nav-link active text-white" aria-current="page" href="index.html">PÁGINA INICIAL</a>
+                    </li>
+                    <li class="nav-item navbar-item" style="transition: background-color 0.3s;" onmouseover="this.style.backgroundColor='#579e7d';" onmouseout="this.style.backgroundColor='transparent';">
+                        <a class="nav-link text-white" href="confirmar.html">CONFIRMAR PRESENÇA</a>
+                    </li>
+                    <li class="nav-item navbar-item" style="transition: background-color 0.3s;" onmouseover="this.style.backgroundColor='#579e7d';" onmouseout="this.style.backgroundColor='transparent';">
+                        <a class="nav-link text-white" href="local.html">LOCAL</a>
+                    </li>
+                    <li class="nav-item navbar-item" style="transition: background-color 0.3s;" onmouseover="this.style.backgroundColor='#579e7d';" onmouseout="this.style.backgroundColor='transparent';">
+                        <a class="nav-link text-white" href="presente.html">PRESENTES</a>
+                    </li>
+                    <li class="nav-item navbar-item" style="transition: background-color 0.3s;" onmouseover="this.style.backgroundColor='#579e7d';" onmouseout="this.style.backgroundColor='transparent';">
+                        <a class="nav-link text-white" href="trajes.html">TRAJES</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -56,28 +57,64 @@
     <!-- CONTEÚDO PRINCIPAL -->
     <div class="container monserrat-400 text-center my-5">
         <h2 class="titulo-traje">Traje dos Convidados</h2>
-        <p class="text-green traje-texto">Para esse momento especial, pedimos que venham com <strong>traje esporte fino</strong>. ❤️</p>
-        <p class="text-green traje-texto">Abaixo, deixamos duas referências para ajudar na escolha do look:</p>
+        <p class="text-green traje-texto">
+            Para esse momento especial, pedimos que venham com 
+            <a href="https://www.google.com/search?q=traje+esporte+fino" target="_blank" class="text-green" style="text-decoration: underline;">
+            <strong>traje esporte fino</strong>
+            </a>. 💚
+        </p>
+
+        <div class="col-4 offset-4">
+            <hr style="border-top: 2px solid white; margin: 2rem 0;">
+        </div>
+
+        <p class="text-green traje-texto">Abaixo, deixamos algumas referências para ajudar na escolha do look:</p>
 
         <div class="row justify-content-center mt-4">
-            <div class="col-md-6 col-10">
+            <div class="col-md-5 col-10 text-center">
                 <h5 class="titulo-traje">Traje Feminino</h5>
-                <img src="imagens/trajemulher.png" alt="Traje feminino esporte fino" class="traje-img">
+                <img src="imagens/trajemulher.png" style="max-width: 100%;" alt="Traje feminino esporte fino" class="traje-img">
             </div>
-            <div class="col-md-6 col-10">
+            <div class="col-md-5 col-10 text-center">
                 <h5 class="titulo-traje">Traje Masculino</h5>
-                <img src="imagens/trajehomem.png" alt="Traje masculino esporte fino" class="traje-img">
+                <img src="imagens/trajehomem.png" style="max-width: 100%;" alt="Traje masculino esporte fino" class="traje-img">
             </div>
+        </div>
+
+        <div class="col-6 offset-3">
+            <hr style="border-top: 2px solid white; margin: 2rem 0;">
+        </div>
+
+        <div class="container monserrat-400 text-center" style="border: 2px solid #d9534f; border-radius: 10px; padding: 20px; background-color: rgba(248, 215, 218, 1.0);">
+            <h2 class="titulo-traje" style="color: #d9534f !important;">Proibições</h2>
+            <p class="text-danger traje-texto" style="font-size: 22px; font-weight: 600;">
+                Para manter a harmonia do evento, pedimos que evitem:
+            </p>
+            <ul class="text-danger" style="list-style-type: none; padding: 0; font-size: 20px; font-weight: 500;">
+                <li>❌ Roupas brancas ou off-white (reservadas para a noiva).</li>
+                <li>❌ Roupas extremamente casuais, como jeans e camisetas.</li>
+                <li>❌ Estampas muito chamativas ou inadequadas (a camiseta da sua banda preferida é linda, mas não pode 😭).</li>
+            </ul>
+            <p class="text-danger traje-texto" style="margin-top: 20px;">
+                Contamos com a sua colaboração para tornar esse momento ainda mais especial! ❤️
+            </p>
         </div>
     </div>
 
-    <!-- FOOTER SIMPLES OPCIONAL -->
-    <div class="container-fluid">
+    <div class="col-6 offset-3">
+        <hr style="border-top: 2px solid white; margin: 2rem 0;">
+    </div>
+
+    <div class="container-fluid monserrat-400">
         <div class="row">
-            <div class="col-4 offset-4">
-                <hr style="border-top: 2px solid white; margin: 2rem 0;">
+            <div class="col-4 offset-4 text-green traje-texto">
+                <p>Ainda na dúvida? Não hesite em entrar em contato conosco! Estamos aqui para ajudar!</p>
             </div>
         </div>
+    </div>
+    <div class="center mb-3 mt-3">
+        <img src="imagens/debora_e_matheus_logo.png" alt="Logo Casamento Débora e Matheus"
+            style="width: 100px; margin: auto;">
     </div>
 
     <!-- Bootstrap JS -->

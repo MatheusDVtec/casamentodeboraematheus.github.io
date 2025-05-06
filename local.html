@@ -6,27 +6,9 @@
     <title>Local - Casamento Débora & Matheus</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <style>
-        .local-container {
-            text-align: center;
-            margin: 30px auto;
-            padding: 20px;
-            border-radius: 10px;
-            max-width: 800px;
-        }
-
-        .local-maps {
-            margin-top: 20px;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-
-        .local-maps iframe {
-            width: 100%;
-            height: 400px;
-            border: none;
-        }
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
     </style>
 </head>
 <body>
@@ -39,44 +21,107 @@
                     <img src="imagens/debora_e_matheus_logo.png" alt="Logo Casamento Débora e Matheus" style="width: 80%; margin: auto;">
                 </div>
             </a>
-            <button class="navbar-toggler navbar-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="color: white;">
-                <span class="navbar-toggler-icon" style="background-color: white; border-radius: 3px;"></span>
+            <button class="navbar-toggler navbar-button custom-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation" style="color: #e3f2e1; border-color: #e3f2e1;">
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse offset-3" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link text-white" href="index.html">PÁGINA INICIAL</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="confirmar.html">CONFIRMAR PRESENÇA</a></li>
-                    <li class="nav-item"><a class="nav-link active text-white" href="#">LOCAL</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="presente.html">PRESENTES</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="trajes.html">TRAJES</a></li>
+                    <li class="nav-item navbar-item" onmouseover="this.style.backgroundColor='#579e7d';" onmouseout="this.style.backgroundColor='transparent';">
+                        <a class="nav-link active text-white" aria-current="page" href="index.html">PÁGINA INICIAL</a>
+                    </li>
+                    <li class="nav-item navbar-item" style="transition: background-color 0.3s;" onmouseover="this.style.backgroundColor='#579e7d';" onmouseout="this.style.backgroundColor='transparent';">
+                        <a class="nav-link text-white" href="confirmar.html">CONFIRMAR PRESENÇA</a>
+                    </li>
+                    <li class="nav-item navbar-item" style="transition: background-color 0.3s;" onmouseover="this.style.backgroundColor='#579e7d';" onmouseout="this.style.backgroundColor='transparent';">
+                        <a class="nav-link text-white" href="local.html">LOCAL</a>
+                    </li>
+                    <li class="nav-item navbar-item" style="transition: background-color 0.3s;" onmouseover="this.style.backgroundColor='#579e7d';" onmouseout="this.style.backgroundColor='transparent';">
+                        <a class="nav-link text-white" href="presente.html">PRESENTES</a>
+                    </li>
+                    <li class="nav-item navbar-item" style="transition: background-color 0.3s;" onmouseover="this.style.backgroundColor='#579e7d';" onmouseout="this.style.backgroundColor='transparent';">
+                        <a class="nav-link text-white" href="trajes.html">TRAJES</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Conteúdo -->
-    <section class="local-container monserrat-400">
-        <h2 class="text-green mb-3">Local da Celebração</h2>
-        <p class="mb-4 text-green">"Porém eu e a minha casa serviremos ao Senhor!"<br><strong>Josué 24:15</strong></p>
+    <div class="container-fluid monserrat-400 text-green center">
+        <div class="row">
+            <div class="col-12 text-green">
+                <h4>Porém eu e a minha casa serviremos ao Senhor!</h4>
+                <h5>Josué 24:15</h5>
+            </div>
+        </div>
 
-        <p class="mb-3 text-green">Com gratidão à Deus, convidamos você para testemunhar<br> o início da nossa história como marido e mulher!</p>
+        <div class="row">
+            <div class="col-12">
+                <p class="intro-historia">
+                    Com gratidão a Deus, convidamos você para testemunhar o início da nossa história como marido e
+                    mulher!
+                </p>
+            </div>
+        </div>
+        <div class="col-6 offset-3">
+            <hr style="border-top: 2px solid white; margin: 2rem 0;">
+        </div>
+    </div>
 
-        <h4 class="text-green mb-1">26 de setembro de 2025</h4>
-        <p class="mb-3 text-green"><strong>Sexta-feira às 13h</strong></p>
+    <div class="container-fluid monserrat-400 mt-1" style="text-align: center;">
+        <h3 class="col-12 text-green center titulo-historia">
+            Data da celebração
+        </h3>
+        <div class="row text-green">
+            <div class="col-4 offset-4">
+                <h4>26 de setembro de 2025</h4>
+                <p class="mb-3 text-green"><strong>Sexta-feira às 13h</strong></p>
+            </div>
+        </div>
+        <div class="col-4 offset-4">
+            <hr style="border-top: 2px solid white; margin: 2rem 0;">
+        </div>
+    </div>
 
-        <hr class="my-4" style="width: 50%; margin: auto;">
+    <div class="row monserrat-400">
+        <h3 class="col-12 text-green center titulo-historia">
+            Local da celebração
+        </h3>
+    </div>
 
-        <h5 class="mt-4 text-green">Sítio Três Irmãos</h5>
-        <p class="text-green">Rua Rio Amazonas, 5917 - Camboriú/SC</p>
+    <div class="container-fluid monserrat-400" style="text-align: center;">
+        <div class="row text-green">
+            <div class="col-8 offset-2">
+                <h4>Sítio Três Irmãos</h4>
+                <p id="address">Rua Rio Amazonas, 5917 - Camboriú/SC</p>
+                <button class="btn btn-success" style="border-color: white;" onclick="copyAddress()">
+                    <i class="bi bi-clipboard"></i> Copiar Endereço
+                </button>
+            </div>
+        </div>
+    </div>
 
-        <div class="local-maps">
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3524.233210715435!2d-48.69283792477302!3d-27.02705222799995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8c9627c37a7ed%3A0xf30b25776d66cce3!2sRua%20Rio%20Amazonas%2C%205917%20-%20Cambori%C3%BA%2C%20SC%2C%2088385-000!5e0!3m2!1spt-BR!2sbr!4v1713988000000!5m2!1spt-BR!2sbr"
-                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    <script>
+        function copyAddress() {
+            const address = document.getElementById('address').innerText;
+            navigator.clipboard.writeText(address);
+        }
+    </script>
+    
+    <div class="container-fluid monserrat-400 mt-3 mb-4" style="text-align: center;">
+        <div class="col-8 offset-2" style="height: 750px">
+            <iframe class="iframe-wrapper"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3524.233210715435!2d-48.69283792477302!3d-27.02705222799995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8c9627c37a7ed%3A0xf30b25776d66cce3!2sRua%20Rio%20Amazonas%2C%205917%20-%20Cambori%C3%BA%2C%20SC%2C%2088385-000!5e0!3m2!1spt-BR!2sbr!4v1713988000000!5m2!1spt-BR!2sbr"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
             </iframe>
         </div>
-    </section>
+    </div>
+
+    <div class="center mb-3 mt-3">
+        <img src="imagens/debora_e_matheus_logo.png" alt="Logo Casamento Débora e Matheus"
+            style="width: 100px; margin: auto;">
+    </div>
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

@@ -32,24 +32,26 @@
                     <img src="imagens/debora_e_matheus_logo.png" alt="Logo Casamento Débora e Matheus" style="width: 80%; margin: auto;">
                 </div>
             </a>
-            <button class="navbar-toggler navbar-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="color: white; border-color: white;">
-                <span class="navbar-toggler-icon" style="background-color: white; border-radius: 3px;"></span>
+            <button class="navbar-toggler navbar-button custom-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation" style="color: #e3f2e1; border-color: #e3f2e1;">
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse offset-3" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="index.html">PÁGINA INICIAL</a>
+                    <li class="nav-item navbar-item" onmouseover="this.style.backgroundColor='#579e7d';" onmouseout="this.style.backgroundColor='transparent';">
+                        <a class="nav-link active text-white" aria-current="page" href="index.html">PÁGINA INICIAL</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item navbar-item" style="transition: background-color 0.3s;" onmouseover="this.style.backgroundColor='#579e7d';" onmouseout="this.style.backgroundColor='transparent';">
                         <a class="nav-link text-white" href="confirmar.html">CONFIRMAR PRESENÇA</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item navbar-item" style="transition: background-color 0.3s;" onmouseover="this.style.backgroundColor='#579e7d';" onmouseout="this.style.backgroundColor='transparent';">
                         <a class="nav-link text-white" href="local.html">LOCAL</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link active text-white" href="presente.html">PRESENTES</a>
+                    <li class="nav-item navbar-item" style="transition: background-color 0.3s;" onmouseover="this.style.backgroundColor='#579e7d';" onmouseout="this.style.backgroundColor='transparent';">
+                        <a class="nav-link text-white" href="presente.html">PRESENTES</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item navbar-item" style="transition: background-color 0.3s;" onmouseover="this.style.backgroundColor='#579e7d';" onmouseout="this.style.backgroundColor='transparent';">
                         <a class="nav-link text-white" href="trajes.html">TRAJES</a>
                     </li>
                 </ul>
@@ -57,40 +59,47 @@
         </div>
     </nav>
 
-    <section id="presente" class="presente bg-verde-claro">
-        <div class="container-fluid">
-            <div class="d-flex justify-content-center">
-                <div class="pix-header-box">
-                    <h2 class="presente-title">Nosso Presente de Casamento 💖</h2>
-                    <p class="monserrat-400 text-center">Se você quiser nos presentear, estamos recebendo por Pix 🥰</p>
-                </div>
-            </div>            
-
-            <div class="pix-opcao" data-pix="00020126580014BR.GOV.BCB.PIX013635f8d598-fcf0-4e82-bde6-6ae4887e69055204000053039865406300.005802BR5921Matheus Oro Del Vigna6009SAO PAULO62140510efiKvutzpT6304591C">
-                <h3 class="text-green">Presente de R$300</h3>
-                <p class="pix-descricao">Para ajudar o casal com pequenos detalhes do novo lar 🏠</p>
-                <button class="btn btn-light" onclick="copiarPixPorDiv(this)">Copiar Código</button>
-            </div>
-
-            <div class="pix-opcao" data-pix="00020126580014BR.GOV.BCB.PIX013635f8d598-fcf0-4e82-bde6-6ae4887e69055204000053039865406500.005802BR5921Matheus Oro Del Vigna6009SAO PAULO62140510HmZTCqtB8M6304D2B2">
-                <h3 class="text-green">Presente de R$500</h3>
-                <p class="pix-descricao">Para contribuir com a decoração do nosso cantinho 🖼️</p>
-                <button class="btn btn-light" onclick="copiarPixPorDiv(this)">Copiar Código</button>
-            </div>
-
-            <div class="pix-opcao" data-pix="00020126580014BR.GOV.BCB.PIX013635f8d598-fcf0-4e82-bde6-6ae4887e69055204000053039865406700.005802BR5921Matheus Oro Del Vigna6009SAO PAULO62140510u9rlAaQuFw6304B139">
-                <h3 class="text-green">Presente de R$700</h3>
-                <p class="pix-descricao">Pix para ajudar o casal a comprar os móveis 🛋️</p>
-                <button class="btn btn-light" onclick="copiarPixPorDiv(this)">Copiar Código</button>
-            </div>
-
-            <div class="pix-opcao" data-pix="00020126580014BR.GOV.BCB.PIX013635f8d598-fcf0-4e82-bde6-6ae4887e690552040000530398654071000.005802BR5921Matheus Oro Del Vigna6009SAO PAULO6214051057rjl3hWai63042E50">
-                <h3 class="text-green">Presente de R$1000</h3>
-                <p class="pix-descricao">Para nos ajudar com um super presente para o novo lar 🎁</p>
-                <button class="btn btn-light" onclick="copiarPixPorDiv(this)">Copiar Código</button>
+    <div class="container-fluid monserrat-400 text-green center">
+        <div class="row">
+            <div class="col-12 text-green">
+                <h3 class="col-12 text-green center titulo-historia">
+                    Nosso Presente de Casamento
+                </h3>
+                Se você quiser nos presentear, estamos recebendo por Pix 🥰💚
             </div>
         </div>
-    </section>
+    </div>
+
+    <div class="container-fluid monserrat-400 text-green center">
+        <div class="row">
+            <div class="col-4 offset-4">
+                <div class="pix-opcao" data-pix="00020126580014BR.GOV.BCB.PIX013635f8d598-fcf0-4e82-bde6-6ae4887e69055204000053039865406300.005802BR5921Matheus Oro Del Vigna6009SAO PAULO62140510efiKvutzpT6304591C">
+                    <h3 class="text-green">Presente de R$300</h3>
+                    <p class="pix-descricao">Para ajudar o casal com pequenos detalhes do novo lar 🏠</p>
+                    <button class="btn btn-light" onclick="copiarPixPorDiv(this)">Copiar Código</button>
+                </div>
+                <div class="pix-opcao" data-pix="00020126580014BR.GOV.BCB.PIX013635f8d598-fcf0-4e82-bde6-6ae4887e69055204000053039865406500.005802BR5921Matheus Oro Del Vigna6009SAO PAULO62140510HmZTCqtB8M6304D2B2">
+                    <h3 class="text-green">Presente de R$500</h3>
+                    <p class="pix-descricao">Para contribuir com a decoração do nosso cantinho 🖼️</p>
+                    <button class="btn btn-light" onclick="copiarPixPorDiv(this)">Copiar Código</button>
+                </div>
+                <div class="pix-opcao" data-pix="00020126580014BR.GOV.BCB.PIX013635f8d598-fcf0-4e82-bde6-6ae4887e69055204000053039865406700.005802BR5921Matheus Oro Del Vigna6009SAO PAULO62140510u9rlAaQuFw6304B139">
+                    <h3 class="text-green">Presente de R$700</h3>
+                    <p class="pix-descricao">Pix para ajudar o casal a comprar os móveis 🛋️</p>
+                    <button class="btn btn-light" onclick="copiarPixPorDiv(this)">Copiar Código</button>
+                </div>
+                <div class="pix-opcao" data-pix="00020126580014BR.GOV.BCB.PIX013635f8d598-fcf0-4e82-bde6-6ae4887e690552040000530398654071000.005802BR5921Matheus Oro Del Vigna6009SAO PAULO6214051057rjl3hWai63042E50">
+                    <h3 class="text-green">Presente de R$1000</h3>
+                    <p class="pix-descricao">Para nos ajudar com um super presente para o novo lar 🎁</p>
+                    <button class="btn btn-light" onclick="copiarPixPorDiv(this)">Copiar Código</button>
+                </div>
+            </div>
+        </div>
+        <div class="center mb-3 mt-3">
+            <img src="imagens/debora_e_matheus_logo.png" alt="Logo Casamento Débora e Matheus"
+                style="width: 100px; margin: auto;">
+        </div>
+    </div>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>

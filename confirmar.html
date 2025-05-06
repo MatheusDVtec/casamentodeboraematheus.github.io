@@ -21,30 +21,102 @@
                     <img src="imagens/debora_e_matheus_logo.png" alt="Logo Casamento Débora e Matheus" style="width: 80%; margin: auto;">
                 </div>
             </a>
-            <button class="navbar-toggler navbar-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="color: white;">
-                <span class="navbar-toggler-icon" style="background-color: white; border-radius: 3px;"></span>
+            <button class="navbar-toggler navbar-button custom-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation" style="color: #e3f2e1; border-color: #e3f2e1;">
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse offset-3" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link text-white" href="index.html">PÁGINA INICIAL</a></li>
-                    <li class="nav-item"><a class="nav-link active text-white" href="#">CONFIRMAR PRESENÇA</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="local.html">LOCAL</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="presente.html">PRESENTES</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="trajes.html">TRAJES</a></li>
+                    <li class="nav-item navbar-item" onmouseover="this.style.backgroundColor='#579e7d';" onmouseout="this.style.backgroundColor='transparent';">
+                        <a class="nav-link active text-white" aria-current="page" href="index.html">PÁGINA INICIAL</a>
+                    </li>
+                    <li class="nav-item navbar-item" style="transition: background-color 0.3s;" onmouseover="this.style.backgroundColor='#579e7d';" onmouseout="this.style.backgroundColor='transparent';">
+                        <a class="nav-link text-white" href="confirmar.html">CONFIRMAR PRESENÇA</a>
+                    </li>
+                    <li class="nav-item navbar-item" style="transition: background-color 0.3s;" onmouseover="this.style.backgroundColor='#579e7d';" onmouseout="this.style.backgroundColor='transparent';">
+                        <a class="nav-link text-white" href="local.html">LOCAL</a>
+                    </li>
+                    <li class="nav-item navbar-item" style="transition: background-color 0.3s;" onmouseover="this.style.backgroundColor='#579e7d';" onmouseout="this.style.backgroundColor='transparent';">
+                        <a class="nav-link text-white" href="presente.html">PRESENTES</a>
+                    </li>
+                    <li class="nav-item navbar-item" style="transition: background-color 0.3s;" onmouseover="this.style.backgroundColor='#579e7d';" onmouseout="this.style.backgroundColor='transparent';">
+                        <a class="nav-link text-white" href="trajes.html">TRAJES</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <section class="confirmacao container monserrat-400">
-        <h2 class="text-green mb-3">Confirme sua Presença</h2>
-        <p class="text-green mb-4">Preencha o formulário abaixo para confirmar sua presença no casamento:</p>
+    <div class="container py-5">
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <div class="card p-4">
+              <div class="card-body">
+                <h2 class="monserrat-400 center">Confirmação de Presença</h2>
+               
+                <div class="mb-3">
+                    <label for="nome" class="form-label">Nome completo</label>
+                    <input type="text" class="form-control" id="nome" placeholder="Ex: Maria Clara Silva" required>
+                </div>
 
-        <div class="iframe-wrapper">
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf6Rhl_94NnlYTerb-JejR_J74-_yORj-hUnJvc3RVWm_nkWA/viewform?embedded=true">Carregando…</iframe>
+                <div class="mb-3">
+                    <label for="telefone" class="form-label">Telefone</label>
+                    <input type="text" class="form-control" id="telefone" placeholder="(XX) XXXXX-XXXX" required oninput="mascaraTelefone(this)">
+                </div>
+                <script>
+                    function mascaraTelefone(input) {
+                        let value = input.value.replace(/\D/g, '');
+                        if (value.length > 10) {
+                            input.value = value.replace(/^(\d{2})(\d{5})(\d{4}).*/, '($1) $2-$3');
+                        } else if (value.length > 5) {
+                            input.value = value.replace(/^(\d{2})(\d{4})(\d{0,4}).*/, '($1) $2-$3');
+                        } else if (value.length > 2) {
+                            input.value = value.replace(/^(\d{2})(\d{0,5})/, '($1) $2');
+                        } else {
+                            input.value = value.replace(/^(\d*)/, '($1');
+                        }
+                    }
+                </script>
+
+                <div class="mb-3">
+                    <label class="form-label">Você irá celebrar com a gente?</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="presenca" id="confirmado" value="Sim" required>
+                        <label class="form-check-label" for="confirmado">Sim, com muito amor! 💚</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="presenca" id="nao-confirmado" value="Não">
+                        <label class="form-check-label" for="nao-confirmado">Infelizmente não poderei ir 😢</label>
+                    </div>
+                </div>
+
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-success" id="confirmarBtn" disabled onclick="confirmarPresenca()">Confirmar Presença</button>
+                </div>
+                <div id="confirmationIcon" class="text-center mt-3" style="display: none;">
+                    <i class="bi bi-check-circle-fill text-success" style="font-size: 2rem;"></i>
+                    <p class="monserrat-400">Confirmação enviada com sucesso!</p>
+                </div>
+                <div id="errorIcon" class="text-center mt-3" style="display: none;">
+                    <i class="bi bi-x-circle-fill text-danger" style="font-size: 2rem;"></i>
+                    <p class="monserrat-400 text-danger">Ocorreu um erro ao enviar a confirmação. Por favor, tente novamente.</p>
+                </div>
+                <div id="errorNome" class="text-center mt-3" style="display: none;">
+                    <i class="bi bi-x-circle-fill text-danger" style="font-size: 2rem;"></i>
+                    <p class="monserrat-400 text-danger">Não encontramos o seu nome na lista, por favor contate os noivos.</p>
+                </div>
+              </div>
+            </div>
+            <p class="monserrat-400 center text-green mt-3">Aguardamos você para esse momento especial!</p>
+          </div>
         </div>
-    </section>
+      </div>
+
+    <div class="center mb-3">
+        <img src="imagens/debora_e_matheus_logo.png" alt="Logo Casamento Débora e Matheus"
+            style="width: 100px; margin: auto;">
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
