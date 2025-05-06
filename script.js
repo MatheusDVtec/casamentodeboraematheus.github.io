@@ -42,11 +42,16 @@ const x = setInterval(function() {
 const nomeInput = document.getElementById('nome');
 const presencaRadios = document.getElementsByName('presenca');
 const confirmarBtn = document.getElementById('confirmarBtn');
+const dataLimite = new Date('2025-08-01');
 
 function validateForm() {
     const nomePreenchido = nomeInput.value.trim() !== '';
     const presencaSelecionada = Array.from(presencaRadios).some(radio => radio.checked);
-    confirmarBtn.disabled = !(nomePreenchido && presencaSelecionada);
+    
+    const dataAtual = new Date();
+    const isDataValida = dataAtual >= dataLimite;
+    
+    confirmarBtn.disabled = !(nomePreenchido && presencaSelecionada) || !isDataValida;
 }
 
 nomeInput.addEventListener('input', validateForm);
@@ -58,7 +63,10 @@ presencaRadios.forEach(radio => radio.addEventListener('change', toggleButtonSta
 function toggleButtonState() {
     const nomePreenchido = nomeInput.value.trim() !== '';
     const presencaSelecionada = Array.from(presencaRadios).some(radio => radio.checked);
-    confirmarBtn.disabled = !(nomePreenchido && presencaSelecionada);
+    const dataAtual = new Date();
+    const isDataValida = dataAtual <= dataLimite;
+    
+    confirmarBtn.disabled = !(nomePreenchido && presencaSelecionada) || !isDataValida;
 }
 
 function confirmarPresenca() {
