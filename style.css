@@ -61,6 +61,7 @@ body, html {
 .pix-opcao {
     border-color: #e3f2e1;
     border: 1px solid;
+    max-width: 500px;
     border-radius: 10px;
     padding: 20px;
     margin: 15px auto;
@@ -103,7 +104,9 @@ body, html {
     background-color: transparent;
     border-radius: 10px;
     width: 100%;
-    height: 750px;
+    height: 100%;
+    max-width: 700px;
+
 }
 
 .imagem-casamento {
